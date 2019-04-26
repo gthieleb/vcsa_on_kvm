@@ -1,0 +1,7 @@
+- debug: msg="Family {{ ansible_os_family }} OS {{ ansible_distribution }}"
+
+- name: Load a variable file based on the OS type, or a default if not found. Using free-form to specify the file.
+  include_vars: "{{ item }}"
+  with_first_found:
+    - "vars/{{ ansible_distribution.lower() }}.yaml"
+    - "vars/{{ ansible_os_family.lower() }}.yaml"

@@ -1,0 +1,4 @@
+- name: Create tmpdir
+  file:
+    path: "{{ vcsa_tmpdir }}"
+    state: directory

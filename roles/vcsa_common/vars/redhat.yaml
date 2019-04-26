@@ -1,0 +1,5 @@
+vcsa_packages:
+    - bsdtar
+    - qemu-img
+    - virt-install
+    - libselinux-python

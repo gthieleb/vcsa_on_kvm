@@ -1,0 +1,4 @@
+vcsa_packages:
+    - bsdtar
+    - qemu-utils
+    - virtinst

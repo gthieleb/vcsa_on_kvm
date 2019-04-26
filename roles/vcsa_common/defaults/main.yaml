@@ -1,0 +1,4 @@
+vcsaiso: 'VMware-VCSA-all-6.7.0-13010631.iso'
+vcsapath: '/data/isos/'
+vcsaprefix: "{{ inventory_hostname_short }}"
+vcsa_tmpdir: "{{ vcsapath }}tmp/vcsa_files"
